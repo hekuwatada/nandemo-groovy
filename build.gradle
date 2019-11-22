@@ -1,6 +1,8 @@
+//TODO: fix gradle test
+
 plugins {
     id 'groovy'
-    id 'ide'
+    id 'idea'
 }
 
 repositories {
@@ -14,7 +16,8 @@ test {
 dependencies {
     compile 'org.codehaus.groovy:groovy-all:2.5.8'
     testCompile 'org.codehaus.groovy:groovy-all:2.5.8'
-    testCompile 'org.assertj.assertj-core:3.14.0'
+    testCompile 'org.assertj:assertj-core:3.14.0'
+    
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
 }
