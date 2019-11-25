@@ -14,7 +14,7 @@ class GroovyThrowableTypeAssert<T extends Throwable> {
     ThrowableAssertAlternative<T> isThrownBy(codeBlockUnderTest) {
         try {
             codeBlockUnderTest()
-            fail("${this.expectedThrowableType.toString()} Throwable was assertThat but not thrown.")
+            fail("${this.expectedThrowableType.toString()} Throwable was expected but not thrown.")
             null // Forced hack due to lack of language type support such as likes of Option/Try/Either
         } catch (AssertionError ae) {
             throw ae
